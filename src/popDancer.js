@@ -2,6 +2,7 @@ var makePopDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
+  this.setStyle();
 };
 
 makePopDancer.prototype = Object.create(makeDancer.prototype);
@@ -20,3 +21,14 @@ makePopDancer.prototype.step = function(timeBetweenSteps) {
 //setting up the prototype relationship
 //redefine the constructor
 //define the step method
+
+makePopDancer.prototype.setStyle = function () {
+  var styleSettings = {
+    height: 100,
+    width: 100,
+    borderColor: 'transparent',
+    borderRadius: 50
+  };
+  this.$node.css(styleSettings);
+  this.$node.append('<img src="https://i.imgur.com/3EMpudh.gif">');
+};

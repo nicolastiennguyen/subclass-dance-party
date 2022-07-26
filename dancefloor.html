@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Object Dance Party</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
-    <script src="src/popDancer.js"></script>
-    <script src="src/rickAstleyDancer.js"></script>
-  </head>
-  <body>
-    <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makePopDancer">add a pop dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRickDancer">add a rick dancer</a>    </div>
-    <script src="src/init.js"></script>
-  </body>
+<style>
+  body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0d71452e-cefa-44bf-8e65-57c434f6e113/d3lijek-b79ea634-915e-4ed9-bce7-54f76f5d4fde.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBkNzE0NTJlLWNlZmEtNDRiZi04ZTY1LTU3YzQzNGY2ZTExM1wvZDNsaWplay1iNzllYTYzNC05MTVlLTRlZDktYmNlNy01NGY3NmY1ZDRmZGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EfQwRz9qwJqluqqyxGfTgWTlRS1JXHTtlZRBpoR9fnw");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+<head>
+  <title>Object Dance Party</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/blinkyDancer.js"></script>
+  <script src="src/popDancer.js"></script>
+  <script src="src/rickAstleyDancer.js"></script>
+</head>
+
+<body>
+  <div class="topbar">
+    <span class="title">object dance party</span>
+    <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+    <a href="#" class="addDancerButton" data-dancer-maker-function-name="makePopDancer">add a pop dancer</a>
+    <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRickDancer">add a rick dancer</a>
+    <a href="#" class="lineUpButton">Line up</a>
+    <a href="#" class="interactButton">Interact</a>
+  </div>
+  <script src="src/init.js"></script>
+</body>
+
 </html>

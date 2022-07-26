@@ -11,7 +11,16 @@ makeRickDancer.prototype.step = function(timeBetweenSteps) {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  //this.$node.toggle();
+  this.$node.toggle();
 };
 
-
+makeRickDancer.prototype.setStyle = function () {
+  var styleSettings = {
+    height: 100,
+    width: 100,
+    borderColor: 'transparent',
+    borderRadius: 50
+  };
+  this.$node.css(styleSettings);
+  this.$node.append('<img src="https://thumbs.gfycat.com/ScientificAmusedJenny-max-1mb.gif">');
+};
